@@ -1,0 +1,286 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-width: 1170px;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article>*+* {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Начало первого блока */
+
+.header {
+    background: url(".//images/bg-header.png");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.menu-header {
+    display: flex;
+    padding-top: 40px;
+    margin-bottom: 260px;
+
+
+}
+
+.logo__img-header {
+    margin-right: 185px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 185px;
+}
+
+.menu li {
+    margin-left: 45px;
+}
+
+.header__item {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.6px;
+    color: #FFFFFF;
+    transition: all 0.3s;
+}
+
+.header__item:hover {
+    border-bottom: 1px solid #00B2A0;
+}
+
+.info-header {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+
+.title-header {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 235px;
+    letter-spacing: 0.6px;
+    color: #0D302C;
+    margin-bottom: 12px;
+}
+
+.subtitle-header {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.6px;
+    color: #000000;
+    margin-bottom: 315px;
+}
+
+.header-icon {
+    margin-bottom: 97px;
+}
+
+/* Начало второго блока */
+
+.about__title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0.6px;
+    color: #01353E;
+    text-align: center;
+    position: relative;
+    margin-top: 190px;
+    margin-bottom: 100px;
+
+
+}
+
+.about__title::after {
+    content: " ";
+    position: absolute;
+    background: url(".//images/logo-green.svg");
+    width: 48px;
+    height: 49px;
+    margin-top: 20px;
+
+}
+
+.about-text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+
+
+p {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.6px;
+    color: #242121;
+}
+
+.info__text-p-1 {
+    max-width: 480px;
+
+}
+
+.info__text-p-1 p {
+    margin-bottom: 30px;
+}
+
+.info__text-p-2 {
+    max-width: 480px;
+
+}
+
+.text-1 {
+    margin-bottom: 48px;
+}
+
+.text-2 {
+    margin-bottom: 79px;
+}
+
+.text-3 {
+    margin-bottom: 30px;
+}
+
+/* Начало третьего блока */
+
+.school-info {
+    background-color: #F8F8F8;
+    padding: 200px 0 200px;
+    
+}
+
+.title-school {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0.6px;
+    color: #01353E;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.title-school::after {
+    content: " ";
+    position: absolute;
+    background: url(".//images/logo-green.svg");
+    width: 48px;
+    height: 49px;
+    margin-top: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
